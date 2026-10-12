@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-800 antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+/* Custom APA Table Styles */
+.apa-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'TH Sarabun PSK', 'Sarabun', serif;
+  font-size: 1.15rem;
+  line-height: 1.4;
+  margin: 1rem 0;
+}
+
+.apa-table th, .apa-table td {
+  padding: 8px 14px;
+  text-align: left;
+}
+
+.apa-table thead tr:first-child th {
+  border-top: 2px solid #1e293b;
+  border-bottom: 1.5px solid #1e293b;
+  font-weight: 600;
+}
+
+.apa-table tbody tr:last-child td {
+  border-bottom: 2px solid #1e293b;
+}
+
+.apa-table .border-sub-header {
+  border-bottom: 1px solid #94a3b8;
+}
+
+.apa-note {
+  font-size: 0.95rem;
+  font-style: italic;
+  margin-top: 6px;
+  color: #475569;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
